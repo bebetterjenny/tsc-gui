@@ -9,7 +9,7 @@ import PopularCard from './PopularCard';
 import CasesCompletedLineChartCard from './CasesCompletedLineChartCard';
 import TotalOrganizationsLightCard from './TotalOrganizationsLightCard';
 import TotalRecipientsDarkCard from './TotalRecipientsDarkCard';
-import TotalGrowthBarChart from './TotalGrowthBarChart';
+import TotalRecipientsVarianceBarChart from './TotalRecipientsVarianceBarChart';
 import { gridSpacing } from 'store/constant';
 
 // ==============================|| DEFAULT DASHBOARD ||============================== //
@@ -45,7 +45,7 @@ const Dashboard = () => {
       <Grid item xs={12}>
         <Grid container spacing={gridSpacing}>
           <Grid item xs={12} md={8}>
-            <TotalGrowthBarChart isLoading={isLoading} />
+            <TotalRecipientsVarianceBarChart isLoading={isLoading} />
           </Grid>
           <Grid item xs={12} md={4}>
             <PopularCard isLoading={isLoading} />

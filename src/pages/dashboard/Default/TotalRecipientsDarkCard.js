@@ -10,6 +10,7 @@ import TotalIncomeCard from 'ui-component/cards/Skeleton/TotalIncomeCard';
 
 // assets
 import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 // styles
 const CardWrapper = styled(MainCard)(({ theme }) => ({
@@ -61,7 +62,7 @@ const TotalRecipientsDarkCard = ({ isLoading }) => {
                       color: theme.palette.warning.dark
                     }}
                   >
-                    <StorefrontTwoToneIcon fontSize="inherit" />
+                    <PersonOutlineIcon fontSize="inherit" />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText

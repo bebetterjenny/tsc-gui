@@ -17,6 +17,7 @@ import ChartDataYear from './chart-data/total-order-year-line-chart';
 
 // assets
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const CardWrapper = styled(MainCard)(({ theme }) => ({
@@ -103,7 +104,7 @@ const CasesCompletedLineChartCard = ({ isLoading }) => {
                         mt: 1
                       }}
                     >
-                      <LocalMallOutlinedIcon fontSize="inherit" />
+                      <EventAvailableIcon fontSize="inherit" />
                     </Avatar>
                   </Grid>
                   <Grid item>

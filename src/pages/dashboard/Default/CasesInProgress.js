@@ -11,6 +11,7 @@ import SkeletonEarningCard from 'ui-component/cards/Skeleton/EarningCard';
 
 // assets
 import EarningIcon from 'assets/images/icons/earning.svg';
+import LoopIcon from '@mui/icons-material/Loop';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import GetAppTwoToneIcon from '@mui/icons-material/GetAppOutlined';
@@ -51,7 +52,11 @@ const CardWrapper = styled(MainCard)(({ theme }) => ({
       top: -155,
       right: -70
     }
-  }
+  },
+  '& .loop-icon': {
+    animation: 'loop 2s infinite',
+    animationTimingFunction: 'linear',
+  },
 }));
 
 // ===========================|| DASHBOARD DEFAULT - EARNING CARD ||=========================== //
@@ -89,7 +94,7 @@ const CasesInProgress = ({ isLoading }) => {
                         mt: 1
                       }}
                     >
-                      <img src={EarningIcon} alt="Notification" />
+                      <LoopIcon className="loop-icon" sx={{ color: 'white' }} />
                     </Avatar>
                   </Grid>
                   <Grid item>

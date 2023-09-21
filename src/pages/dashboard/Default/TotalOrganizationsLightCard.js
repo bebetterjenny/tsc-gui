@@ -10,6 +10,8 @@ import TotalIncomeCard from 'ui-component/cards/Skeleton/TotalIncomeCard';
 
 // assets
 import TableChartOutlinedIcon from '@mui/icons-material/TableChartOutlined';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
 // styles
 const CardWrapper = styled(MainCard)(({ theme }) => ({
@@ -63,7 +65,7 @@ const TotalOrganizationsLightCard = ({ isLoading }) => {
                       color: '#fff'
                     }}
                   >
-                    <TableChartOutlinedIcon fontSize="inherit" />
+                    <EventAvailableIcon fontSize="inherit" />
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText
