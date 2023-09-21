@@ -16,6 +16,7 @@ import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import { mockOrganizations } from './chart-data/mock-organzations';
 
 // ==============================|| DASHBOARD DEFAULT - POPULAR CARD ||============================== //
 
@@ -43,7 +44,7 @@ const PopularCard = ({ isLoading }) => {
               <Grid item xs={12}>
                 <Grid container alignContent="center" justifyContent="space-between">
                   <Grid item>
-                    <Typography variant="h4">Popular Stocks</Typography>
+                    <Typography variant="h4">Popular Organizations</Typography>
                   </Grid>
                   <Grid item>
                     <MoreHorizOutlinedIcon
@@ -83,12 +84,62 @@ const PopularCard = ({ isLoading }) => {
                 <BajajAreaChartCard />
               </Grid>
               <Grid item xs={12}>
-                <Grid container direction="column">
+                {mockOrganizations.slice(0, 5).map((item, index) => {
+                  const { orgName, type, caseTotal, variance } = item;
+                  const change = variance > 0 ? `growth` : 'reduction';
+                  const abs = Math.abs(variance);
+                  return (
+                    <>
+                      {!!index && <Divider sx={{ my: 1.5 }} />}
+                      <Grid container direction="column">
+                        <Grid item>
+                          <Grid container alignItems="center" justifyContent="space-between">
+                            <Grid item>
+                              <Typography variant="subtitle1" color="inherit">
+                                {orgName}
+                              </Typography>
+                            </Grid>
+                            <Grid item>
+                              <Grid container alignItems="center" justifyContent="space-between">
+                                <Grid item>
+                                  <Typography variant="subtitle1" color="inherit">
+                                    {caseTotal}
+                                  </Typography>
+                                </Grid>
+                                <Grid item>
+                                  <Avatar
+                                    variant="rounded"
+                                    sx={{
+                                      width: 16,
+                                      height: 16,
+                                      borderRadius: '5px',
+                                      backgroundColor: theme.palette.success.light,
+                                      color: theme.palette.success.dark,
+                                      ml: 2
+                                    }}
+                                  >
+                                    <KeyboardArrowUpOutlinedIcon fontSize="small" color="inherit" />
+                                  </Avatar>
+                                </Grid>
+                              </Grid>
+                            </Grid>
+                          </Grid>
+                        </Grid>
+                        <Grid item>
+                          <Typography variant="subtitle2" sx={{ color: 'success.dark' }}>
+                            {abs}% {change}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </>
+                  );
+                })}
+                {/* <Grid container direction="column">
                   <Grid item>
                     <Grid container alignItems="center" justifyContent="space-between">
                       <Grid item>
                         <Typography variant="subtitle1" color="inherit">
-                          Bajaj Finery
+                          Test
                         </Typography>
                       </Grid>
                       <Grid item>
@@ -286,7 +337,7 @@ const PopularCard = ({ isLoading }) => {
                       10% loss
                     </Typography>
                   </Grid>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Grid>
           </CardContent>
