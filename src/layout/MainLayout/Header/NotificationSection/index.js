@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Badge from '@mui/material/Badge';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -100,27 +101,29 @@ const NotificationSection = () => {
         }}
       >
         <ButtonBase sx={{ borderRadius: '12px' }}>
-          <Avatar
-            variant="rounded"
-            sx={{
-              ...theme.typography.commonAvatar,
-              ...theme.typography.mediumAvatar,
-              transition: 'all .2s ease-in-out',
-              background: theme.palette.secondary.light,
-              color: theme.palette.secondary.dark,
-              '&[aria-controls="menu-list-grow"],&:hover': {
-                background: theme.palette.secondary.dark,
-                color: theme.palette.secondary.light
-              }
-            }}
-            ref={anchorRef}
-            aria-controls={open ? 'menu-list-grow' : undefined}
-            aria-haspopup="true"
-            onClick={handleToggle}
-            color="inherit"
-          >
-            <IconBell stroke={1.5} size="1.3rem" />
-          </Avatar>
+          <Badge color="error" badgeContent={100} max={99}>
+            <Avatar
+              variant="rounded"
+              sx={{
+                ...theme.typography.commonAvatar,
+                ...theme.typography.mediumAvatar,
+                transition: 'all .2s ease-in-out',
+                background: theme.palette.primary.light,
+                color: theme.palette.primary.dark,
+                '&[aria-controls="menu-list-grow"],&:hover': {
+                  background: theme.palette.primary.dark,
+                  color: theme.palette.primary.light
+                }
+              }}
+              ref={anchorRef}
+              aria-controls={open ? 'menu-list-grow' : undefined}
+              aria-haspopup="true"
+              onClick={handleToggle}
+              color="inherit"
+            >
+              <IconBell stroke={1.5} size="1.3rem" />
+            </Avatar>
+          </Badge>
         </ButtonBase>
       </Box>
       <Popper
