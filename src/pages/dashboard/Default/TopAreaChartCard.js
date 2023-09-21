@@ -15,7 +15,7 @@ import { mockOrganizations } from './chart-data/mock-organzations';
 
 // ===========================|| DASHBOARD DEFAULT - BAJAJ AREA CHART CARD ||=========================== //
 
-const BajajAreaChartCard = () => {
+const TopAreaChartCard = () => {
   const theme = useTheme();
   const customization = useSelector((state) => state.customization);
   const { navType } = customization;
@@ -62,4 +62,4 @@ const BajajAreaChartCard = () => {
   );
 };
 
-export default BajajAreaChartCard;
+export default TopAreaChartCard;
