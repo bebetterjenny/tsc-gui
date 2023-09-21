@@ -38,24 +38,24 @@ const CardStyle = styled(Card)(({ theme }) => ({
 
 // ==============================|| PROFILE MENU - UPGRADE PLAN CARD ||============================== //
 
-const UpgradePlanCard = () => (
+const TaskCard = () => (
   <CardStyle>
     <CardContent>
       <Grid container direction="column" spacing={2}>
         <Grid item>
-          <Typography variant="h4">Upgrade your plan</Typography>
+          <Typography variant="h4">Latest Task in Progress</Typography>
         </Grid>
         <Grid item>
           <Typography variant="subtitle2" color="grey.900" sx={{ opacity: 0.6 }}>
-            70% discount for 1 years <br />
-            subscriptions.
+            Visit Cormac Kinney and see if he <br />
+            has found a permenant house.
           </Typography>
         </Grid>
         <Grid item>
           <Stack direction="row">
             <AnimateButton>
               <Button variant="contained" color="warning" sx={{ boxShadow: 'none' }}>
-                Go Premium
+                View Details
               </Button>
             </AnimateButton>
           </Stack>
@@ -65,4 +65,4 @@ const UpgradePlanCard = () => (
   </CardStyle>
 );
 
-export default UpgradePlanCard;
+export default TaskCard;
