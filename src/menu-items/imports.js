@@ -1,8 +1,6 @@
 // assets
-import { IconDashboard } from '@tabler/icons';
+import { IconOld, IconAffiliate } from '@tabler/icons';
 
-// constant
-const icons = { IconDashboard };
 
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
@@ -16,7 +14,7 @@ const imports = {
       title: 'recipients',
       type: 'item',
       url: '/import/recipients',
-      icon: icons.IconDashboard,
+      icon: IconOld,
       breadcrumbs: false
     },
     {
@@ -24,7 +22,7 @@ const imports = {
       title: 'Organizations',
       type: 'item',
       url: '/import/organizations',
-      icon: icons.IconDashboard,
+      icon: IconAffiliate,
       breadcrumbs: false
     }
   ]
