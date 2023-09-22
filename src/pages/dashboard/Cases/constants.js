@@ -14,7 +14,7 @@ export const mockCases = [
         taskProgressEnum: "START", //START, IN_PROGRESS, COMPLETED
         consenus: ['consent1.pdf', 'consent2.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Oct 2 10:00 AM",
             url: ''
         }
     },
@@ -25,7 +25,7 @@ export const mockCases = [
         taskProgressEnum: "START",
         consenus: [], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Sep 29 12:30 AM",
             url: ''
         }
     },
@@ -36,7 +36,7 @@ export const mockCases = [
         taskProgressEnum: "IN_PROGRESS",
         consenus: ['consent1.pdf', 'consent2.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Nov 3 10:15 AM",
             url: ''
         }
     },
@@ -47,7 +47,7 @@ export const mockCases = [
         taskProgressEnum: "COMPLETED",
         consenus: ['consent1.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Sep 30 15:45 AM",
             url: ''
         }
     },
@@ -58,7 +58,7 @@ export const mockCases = [
         taskProgressEnum: "COMPLETED",
         consenus: [], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Oct 16 14:30 AM",
             url: ''
         }
     },
@@ -69,7 +69,7 @@ export const mockCases = [
         taskProgressEnum: "IN_PROGRESS",
         consenus: ['consent2.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Oct 1 17:00 AM",
             url: ''
         }
     },
@@ -80,7 +80,7 @@ export const mockCases = [
         taskProgressEnum: "START",
         consenus: [], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Sep 21 19:30 AM",
             url: ''
         }
     },
@@ -91,7 +91,7 @@ export const mockCases = [
         taskProgressEnum: "START",
         consenus: ['consent1.pdf', 'consent3.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Nov 18 10:40 AM",
             url: ''
         }
     },
@@ -102,7 +102,7 @@ export const mockCases = [
         taskProgressEnum: "IN_PROGRESS",
         consenus: ['consent1.pdf', 'consent2.pdf', 'consent3.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Oct 11 20:30 AM",
             url: ''
         }
     },
@@ -113,7 +113,7 @@ export const mockCases = [
         taskProgressEnum: "COMPLETED",
         consenus: [],
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Sep 23 16:45 AM",
             url: ''
         }
     },
@@ -124,7 +124,7 @@ export const mockCases = [
         taskProgressEnum: "COMPLETED",
         consenus: [], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Oct 27 15:15 AM",
             url: ''
         }
     },
@@ -135,7 +135,7 @@ export const mockCases = [
         taskProgressEnum: "IN_PROGRESS",
         consenus: ['consent1.pdf', 'consent2.pdf'], 
         appointment: {
-            time: "2023 Oct 2nd 10:00 AM",
+            time: "2023 Nov 2 18:20 AM",
             url: ''
         }
     }
