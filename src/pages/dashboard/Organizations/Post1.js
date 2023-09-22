@@ -26,8 +26,8 @@ const Post1 = () => {
         <CardHeader
           avatar={
             <Link to='/profilepage' style={{ textDecoration: 'none' }}>
-              <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
-                R
+              <Avatar sx={{ bgcolor: 'yellow' }} aria-label='recipe'>
+                A
               </Avatar>
             </Link>
           }
@@ -37,7 +37,7 @@ const Post1 = () => {
             </IconButton>
           }
           title='ABC'
-          subheader='September 14, 2023'
+          subheader='September 22, 2023'
         />
         <CardMedia
           component='img'

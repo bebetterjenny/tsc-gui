@@ -26,8 +26,8 @@ const Post2 = () => {
         <CardHeader
           avatar={
             <Link to='/profilepage' style={{ textDecoration: 'none' }}>
-              <Avatar sx={{ bgcolor: 'red' }} aria-label='recipe'>
-                R
+              <Avatar sx={{ bgcolor: 'yellow' }} aria-label='recipe'>
+                E
               </Avatar>
             </Link>
           }
