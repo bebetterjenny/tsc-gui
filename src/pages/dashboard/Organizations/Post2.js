@@ -42,14 +42,17 @@ const Post2 = () => {
         <CardMedia
           component='img'
           height='194'
-          image='https://media.istockphoto.com/id/178447404/photo/modern-business-buildings.jpg?s=1024x1024&w=is&k=20&c=w15AGFL7iZtN6aXbIlrUWZbkft2HtZq9TnKrmp5Jr2g='
+          image='https://www.qualityformationsblog.co.uk/wp-content/uploads/2020/02/QCF-Volunteer.jpg'
           alt='Paella dish'
         />
         <CardContent>
           <Typography variant='body2' color='text.secondary'>
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            Help bring clean and safe water to every person on the planet. The
+            water crisis is massive. But together, we can solve it. Private
+            donors cover our operating costs so whether you choose to join us by
+            giving once or through The Spring, our community of monthly givers,
+            know that 100% of your generosity will bring clean water to families
+            around the world.
           </Typography>
         </CardContent>
         <CardActions>
