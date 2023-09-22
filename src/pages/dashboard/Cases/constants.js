@@ -89,7 +89,7 @@ export const mockCases = [
         tscAdministratorId: "21304",
         navigatorId: "313",
         taskProgressEnum: "START",
-        consenus: ['consent1.pdf', 'consent2.pdf', 'consent3.pdf'], 
+        consenus: ['consent1.pdf', 'consent3.pdf'], 
         appointment: {
             time: "2023 Oct 2nd 10:00 AM",
             url: ''
@@ -100,7 +100,7 @@ export const mockCases = [
         tscAdministratorId: "21302",
         navigatorId: "315",
         taskProgressEnum: "IN_PROGRESS",
-        consenus: ['consent1.pdf', 'consent3.pdf'], 
+        consenus: ['consent1.pdf', 'consent2.pdf', 'consent3.pdf'], 
         appointment: {
             time: "2023 Oct 2nd 10:00 AM",
             url: ''
@@ -111,7 +111,7 @@ export const mockCases = [
         tscAdministratorId: "21303",
         navigatorId: "312",
         taskProgressEnum: "COMPLETED",
-        consenus: ['consent1.pdf', 'consent2.pdf'], 
+        consenus: [],
         appointment: {
             time: "2023 Oct 2nd 10:00 AM",
             url: ''
@@ -133,7 +133,7 @@ export const mockCases = [
         tscAdministratorId: "21301",
         navigatorId: "311",
         taskProgressEnum: "IN_PROGRESS",
-        consenus: [], 
+        consenus: ['consent1.pdf', 'consent2.pdf'], 
         appointment: {
             time: "2023 Oct 2nd 10:00 AM",
             url: ''

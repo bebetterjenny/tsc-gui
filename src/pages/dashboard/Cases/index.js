@@ -93,7 +93,7 @@ const Cases = () => {
               ),
             renderCell: (params) => {
                 const fileNames = params.value;
-                return fileNames.map((fileName, index) => (
+                return fileNames?.map((fileName, index) => (
                     <Chip 
                         key={`${index}-${fileName}`} 
                         label={fileName} 
@@ -103,7 +103,7 @@ const Cases = () => {
                         sx={{ ml: index ? 0.5 : 0 }}
                         onClick={() => {}}
                     />
-                ));
+                )) ?? <></>;
             },
         },
         {
