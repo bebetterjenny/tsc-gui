@@ -7,6 +7,7 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/Default')));
+const DashboardMatch = Loadable(lazy(() => import('pages/dashboard/Match')));
 const DashboardCases = Loadable(lazy(() => import('pages/dashboard/Cases')));
 const DashboardCasesEdit = Loadable(lazy(() => import('pages/dashboard/Cases/Edit')));
 const DashboardRecipients = Loadable(lazy(() => import('pages/dashboard/Recipients')));
@@ -45,6 +46,10 @@ const MainRoutes = {
           element: <DashboardDefault />
         },
         {
+          path: 'match', 
+          element: <DashboardMatch />
+        },
+        {
           path: 'cases',
           children: [
             {
@@ -75,7 +80,7 @@ const MainRoutes = {
           children: [
             {
               path: '',
-              element: <DashboardRecipients />
+              element: <DashboardOrganizations />
             },
             {
               path: 'edit/:id',

@@ -28,7 +28,7 @@ const StyledRoot = styled(MainCard)(({ theme }) => ({
     },
 }));
 
-const Edit = () => {
+const Match = () => {
 
     return (
         <>
@@ -37,4 +37,4 @@ const Edit = () => {
     );
 }
 
-export default Edit;
+export default Match;
