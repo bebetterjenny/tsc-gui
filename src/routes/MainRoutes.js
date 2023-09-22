@@ -6,24 +6,42 @@ import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
-const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/Default')));
+const DashboardDefault = Loadable(
+  lazy(() => import('pages/dashboard/Default'))
+);
 const DashboardMatch = Loadable(lazy(() => import('pages/dashboard/Match')));
 const DashboardCases = Loadable(lazy(() => import('pages/dashboard/Cases')));
-const DashboardCasesEdit = Loadable(lazy(() => import('pages/dashboard/Cases/Edit')));
-const DashboardRecipients = Loadable(lazy(() => import('pages/dashboard/Recipients')));
-const DashboardRecipientsEdit = Loadable(lazy(() => import('pages/dashboard/Recipients/Edit')));
-const DashboardOrganizations = Loadable(lazy(() => import('pages/dashboard/Organizations')));
-const DashboardOrganizationsEdit = Loadable(lazy(() => import('pages/dashboard/Organizations/Edit')));
+const DashboardCasesEdit = Loadable(
+  lazy(() => import('pages/dashboard/Cases/Edit'))
+);
+const DashboardRecipients = Loadable(
+  lazy(() => import('pages/dashboard/Recipients'))
+);
+const DashboardRecipientsEdit = Loadable(
+  lazy(() => import('pages/dashboard/Recipients/Edit'))
+);
+const DashboardOrganizations = Loadable(
+  lazy(() => import('pages/dashboard/Organizations'))
+);
+const DashboardOrganizationsEdit = Loadable(
+  lazy(() => import('pages/dashboard/Organizations/Edit'))
+);
 
 // import routing
 const Imoport = Loadable(lazy(() => import('pages/import')));
 
 // utilities routing
-const UtilsTypography = Loadable(lazy(() => import('pages/utilities/Typography')));
+const UtilsTypography = Loadable(
+  lazy(() => import('pages/utilities/Typography'))
+);
 const UtilsColor = Loadable(lazy(() => import('pages/utilities/Color')));
 const UtilsShadow = Loadable(lazy(() => import('pages/utilities/Shadow')));
-const UtilsMaterialIcons = Loadable(lazy(() => import('pages/utilities/MaterialIcons')));
-const UtilsTablerIcons = Loadable(lazy(() => import('pages/utilities/TablerIcons')));
+const UtilsMaterialIcons = Loadable(
+  lazy(() => import('pages/utilities/MaterialIcons'))
+);
+const UtilsTablerIcons = Loadable(
+  lazy(() => import('pages/utilities/TablerIcons'))
+);
 
 // sample page routing
 const SamplePage = Loadable(lazy(() => import('pages/sample-page')));
@@ -36,135 +54,135 @@ const MainRoutes = {
   children: [
     {
       path: '/',
-      element: <DashboardDefault />
+      element: <DashboardDefault />,
     },
     {
       path: 'dashboard',
       children: [
         {
           path: '',
-          element: <DashboardDefault />
+          element: <DashboardDefault />,
         },
         {
-          path: 'match', 
-          element: <DashboardMatch />
+          path: 'match',
+          element: <DashboardMatch />,
         },
         {
           path: 'cases',
           children: [
             {
               path: '',
-              element: <DashboardCases />
+              element: <DashboardCases />,
             },
             {
               path: 'add',
-              element: <DashboardCasesEdit />
+              element: <DashboardCasesEdit />,
             },
             {
               path: 'edit/:id',
-              element: <DashboardCasesEdit />
-            }
-          ]
+              element: <DashboardCasesEdit />,
+            },
+          ],
         },
         {
           path: 'recipients',
           children: [
             {
               path: '',
-              element: <DashboardRecipients />
+              element: <DashboardRecipients />,
             },
             {
               path: 'add',
-              element: <DashboardRecipientsEdit />
+              element: <DashboardRecipientsEdit />,
             },
             {
               path: 'edit/:id',
-              element: <DashboardRecipientsEdit />
-            }
-          ]
+              element: <DashboardRecipientsEdit />,
+            },
+          ],
         },
         {
           path: 'organizations',
           children: [
             {
               path: '',
-              element: <DashboardOrganizations />
+              element: <DashboardOrganizations />,
             },
             {
               path: 'add',
-              element: <DashboardOrganizationsEdit />
+              element: <DashboardOrganizationsEdit />,
             },
             {
               path: 'edit/:id',
-              element: <DashboardOrganizationsEdit />
-            }
-          ]
-        }
-      ]
+              element: <DashboardOrganizationsEdit />,
+            },
+          ],
+        },
+      ],
     },
     {
       path: 'import',
       children: [
         {
           path: 'recipients',
-          element: <Imoport />
+          element: <Imoport />,
         },
         {
           path: 'organizations',
-          element: <Imoport />
-        }
-      ]
+          element: <Imoport />,
+        },
+      ],
     },
     {
       path: 'utils',
       children: [
         {
           path: 'util-typography',
-          element: <UtilsTypography />
-        }
-      ]
+          element: <UtilsTypography />,
+        },
+      ],
     },
     {
       path: 'utils',
       children: [
         {
           path: 'util-color',
-          element: <UtilsColor />
-        }
-      ]
+          element: <UtilsColor />,
+        },
+      ],
     },
     {
       path: 'utils',
       children: [
         {
           path: 'util-shadow',
-          element: <UtilsShadow />
-        }
-      ]
+          element: <UtilsShadow />,
+        },
+      ],
     },
     {
       path: 'icons',
       children: [
         {
           path: 'tabler-icons',
-          element: <UtilsTablerIcons />
-        }
-      ]
+          element: <UtilsTablerIcons />,
+        },
+      ],
     },
     {
       path: 'icons',
       children: [
         {
           path: 'material-icons',
-          element: <UtilsMaterialIcons />
-        }
-      ]
+          element: <UtilsMaterialIcons />,
+        },
+      ],
     },
     {
       path: 'sample-page',
-      element: <SamplePage />
-    }
-  ]
+      element: <SamplePage />,
+    },
+  ],
 };
 
 export default MainRoutes;
