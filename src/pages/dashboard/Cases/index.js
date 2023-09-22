@@ -39,17 +39,6 @@ const StyledRoot = styled(MainCard)(({ theme }) => ({
 }));
 
 const rows = mockCases;
-// [
-//     { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-//     { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-//     { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-//     { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-//     { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-//     { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-//     { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-//     { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-//     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-// ];
 
 const Cases = () => {
     const navigate = useNavigate();
@@ -95,8 +84,6 @@ const Cases = () => {
             flex: 1,
             cellClassName: 'actions',
             getActions: ({ id }) => {
-
-
                 return [
                     <GridActionsCellItem
                         icon={<EditIcon />}
@@ -110,11 +97,15 @@ const Cases = () => {
         }
     ], [handleEditClick]);
 
+    const handleAdd = useCallback(() => {
+        navigate('add');
+    }, [navigate]);
+
     return (
         <StyledRoot>
             <Stack direction="row" spacing={1} sx={{ mb: 1 }}>
                 <Button variant="outlined"><RefreshIcon />Refresh</Button>
-                <Button variant="outlined"><AddIcon />Add New</Button>
+                <Button variant="outlined" onClick={handleAdd}><AddIcon />Add New</Button>
                 <Button variant="outlined"><DownloadIcon />Export</Button>
             </Stack>
             <DataGrid
@@ -124,7 +115,7 @@ const Cases = () => {
                 initialState={{
                     pagination: {
                         paginationModel: {
-                            pageSize: 5,
+                            pageSize: 12,
                         },
                     },
                 }}

@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import MainCard from 'ui-component/cards/MainCard';
 import Breadcrumbs from 'ui-component/extended/Breadcrumbs';
 import { IconChevronRight } from '@tabler/icons';
+import { useNavigate, useLocation } from 'react-router';
 
 // styles
 const StyledRoot = styled(MainCard)(({ theme }) => ({
@@ -29,6 +30,7 @@ const StyledRoot = styled(MainCard)(({ theme }) => ({
 }));
 
 const Edit = () => {
+    const location = useLocation();
 
     return (
         <>

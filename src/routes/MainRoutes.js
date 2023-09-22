@@ -57,6 +57,10 @@ const MainRoutes = {
               element: <DashboardCases />
             },
             {
+              path: 'add',
+              element: <DashboardCasesEdit />
+            },
+            {
               path: 'edit/:id',
               element: <DashboardCasesEdit />
             }
@@ -70,6 +74,10 @@ const MainRoutes = {
               element: <DashboardRecipients />
             },
             {
+              path: 'add',
+              element: <DashboardRecipientsEdit />
+            },
+            {
               path: 'edit/:id',
               element: <DashboardRecipientsEdit />
             }
@@ -81,6 +89,10 @@ const MainRoutes = {
             {
               path: '',
               element: <DashboardOrganizations />
+            },
+            {
+              path: 'add',
+              element: <DashboardOrganizationsEdit />
             },
             {
               path: 'edit/:id',
