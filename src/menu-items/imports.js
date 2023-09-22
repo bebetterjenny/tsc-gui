@@ -10,7 +10,7 @@ const imports = {
   type: 'group',
   children: [
     {
-      id: 'recipients',
+      id: 'import-recipients',
       title: 'recipients',
       type: 'item',
       url: '/import/recipients',
@@ -18,7 +18,7 @@ const imports = {
       breadcrumbs: false
     },
     {
-      id: 'organizations',
+      id: 'import-organizations',
       title: 'Organizations',
       type: 'item',
       url: '/import/organizations',

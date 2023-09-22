@@ -34,7 +34,19 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'default',
+          path: '',
+          element: <DashboardDefault />
+        },
+        {
+          path: 'cases',
+          element: <DashboardDefault />
+        },
+        {
+          path: 'recipients',
+          element: <DashboardDefault />
+        },
+        {
+          path: 'organizations',
           element: <DashboardDefault />
         }
       ]

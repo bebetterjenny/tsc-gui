@@ -10,15 +10,15 @@ const dashboard = {
   type: 'group',
   children: [
     {
-      id: 'default',
+      id: 'dashboard-default',
       title: 'Dashboard',
       type: 'item',
-      url: '/dashboard/default',
+      url: '/dashboard',
       icon: IconDashboard,
       breadcrumbs: false
     },
     {
-      id: 'tasks',
+      id: 'dashboard-tasks',
       title: 'Cases',
       type: 'item',
       url: '/dashboard/Cases',
@@ -26,7 +26,7 @@ const dashboard = {
       breadcrumbs: false
     },
     {
-      id: 'recipients',
+      id: 'dashboard-recipients',
       title: 'Recipients',
       type: 'item',
       url: '/dashboard/recipients',
@@ -34,7 +34,7 @@ const dashboard = {
       breadcrumbs: false
     },
     {
-      id: 'organizations',
+      id: 'dashboard-organizations',
       title: 'Organizations',
       type: 'item',
       url: '/dashboard/organizations',
