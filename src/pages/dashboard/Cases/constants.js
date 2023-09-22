@@ -8,75 +8,135 @@ import {
 
 export const mockCases = [
     {
-        taskId: "1",
-        tscAdministratorId: "2",
-        navigatorId: "4",
-        taskProgressEnum: "START" //START, IN_PROGRESS, COMPLETED
+        taskId: "12301",
+        tscAdministratorId: "21302",
+        navigatorId: "314",
+        taskProgressEnum: "START", //START, IN_PROGRESS, COMPLETED
+        consenus: ['consent1.pdf', 'consent2.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "2",
-        tscAdministratorId: "4",
-        navigatorId: "3",
-        taskProgressEnum: "START"
+        taskId: "12302",
+        tscAdministratorId: "21304",
+        navigatorId: "313",
+        taskProgressEnum: "START",
+        consenus: [], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "3",
-        tscAdministratorId: "2",
-        navigatorId: "5",
-        taskProgressEnum: "IN_PROGRESS"
+        taskId: "12303",
+        tscAdministratorId: "21302",
+        navigatorId: "315",
+        taskProgressEnum: "IN_PROGRESS",
+        consenus: ['consent1.pdf', 'consent2.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "4",
-        tscAdministratorId: "3",
-        navigatorId: "2",
-        taskProgressEnum: "COMPLETED"
+        taskId: "12304",
+        tscAdministratorId: "21303",
+        navigatorId: "312",
+        taskProgressEnum: "COMPLETED",
+        consenus: ['consent1.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "5",
-        tscAdministratorId: "5",
-        navigatorId: "1",
-        taskProgressEnum: "COMPLETED"
+        taskId: "12305",
+        tscAdministratorId: "21305",
+        navigatorId: "311",
+        taskProgressEnum: "COMPLETED",
+        consenus: [], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "6",
-        tscAdministratorId: "1",
-        navigatorId: "1",
-        taskProgressEnum: "IN_PROGRESS"
+        taskId: "12306",
+        tscAdministratorId: "21301",
+        navigatorId: "311",
+        taskProgressEnum: "IN_PROGRESS",
+        consenus: ['consent2.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "7",
-        tscAdministratorId: "2",
-        navigatorId: "4",
-        taskProgressEnum: "START" //START, IN_PROGRESS, COMPLETED
+        taskId: "12307",
+        tscAdministratorId: "21302",
+        navigatorId: "314",
+        taskProgressEnum: "START",
+        consenus: [], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "8",
-        tscAdministratorId: "4",
-        navigatorId: "3",
-        taskProgressEnum: "START"
+        taskId: "12308",
+        tscAdministratorId: "21304",
+        navigatorId: "313",
+        taskProgressEnum: "START",
+        consenus: ['consent1.pdf', 'consent2.pdf', 'consent3.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "9",
-        tscAdministratorId: "2",
-        navigatorId: "5",
-        taskProgressEnum: "IN_PROGRESS"
+        taskId: "12309",
+        tscAdministratorId: "21302",
+        navigatorId: "315",
+        taskProgressEnum: "IN_PROGRESS",
+        consenus: ['consent1.pdf', 'consent3.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "10",
-        tscAdministratorId: "3",
-        navigatorId: "2",
-        taskProgressEnum: "COMPLETED"
+        taskId: "12310",
+        tscAdministratorId: "21303",
+        navigatorId: "312",
+        taskProgressEnum: "COMPLETED",
+        consenus: ['consent1.pdf', 'consent2.pdf'], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "11",
-        tscAdministratorId: "5",
-        navigatorId: "1",
-        taskProgressEnum: "COMPLETED"
+        taskId: "12311",
+        tscAdministratorId: "21305",
+        navigatorId: "311",
+        taskProgressEnum: "COMPLETED",
+        consenus: [], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     },
     {
-        taskId: "12",
-        tscAdministratorId: "1",
-        navigatorId: "1",
-        taskProgressEnum: "IN_PROGRESS"
+        taskId: "12312",
+        tscAdministratorId: "21301",
+        navigatorId: "311",
+        taskProgressEnum: "IN_PROGRESS",
+        consenus: [], 
+        appointment: {
+            time: "2023 Oct 2nd 10:00 AM",
+            url: ''
+        }
     }
 ]

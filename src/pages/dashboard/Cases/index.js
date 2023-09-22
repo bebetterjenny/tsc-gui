@@ -8,6 +8,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DownloadIcon from '@mui/icons-material/Download';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
+import Link from '@mui/material/Link';
 import { useNavigate } from 'react-router-dom';
 import {
     GridRowsProp,
@@ -29,6 +30,8 @@ import {
     randomArrayItem,
   } from '@mui/x-data-grid-generator';
 import { mockCases } from './constants';
+import docuSignLogo from 'assets/images/docuSign-logo.jpeg';
+import zoomLogo from 'assets/images/zoom-logo.png';
 
 // styles
 const StyledRoot = styled(MainCard)(({ theme }) => ({
@@ -48,40 +51,84 @@ const Cases = () => {
     }, [navigate]);
 
     const columns = useMemo(() => [
-        { field: 'taskId', headerName: 'Case ID', flex: 1 },
+        { field: 'taskId', headerName: 'Case ID', width: 60 },
         {
             field: 'tscAdministratorId',
             headerName: 'TSC Admin ID', 
-            flex: 1,
+            width: 100
         },
         {
             field: 'navigatorId',
             headerName: 'Navigator ID',
-            flex: 1,
+            width: 100
         },
         {
             field: 'taskProgressEnum',
             headerName: 'Progress',
             sortable: false,
-            flex: 1,
+            width: 140,
             renderCell: (params) => {
                 switch (params.value) {
                     case 'START':
-                        return <Chip label={params.value} color="info" variant="outlined" />;
+                        return <Chip label={params.value} color="info" />;
                     case 'IN_PROGRESS':
-                        return <Chip label={params.value} color="primary" variant="outlined" />;
+                        return <Chip label={params.value} color="primary" />;
                     case 'COMPLETED':
-                        return <Chip label={params.value} color="success" variant="outlined" />;
+                        return <Chip label={params.value} color="success" />;
                     default:
-                        return <Chip label={params.value} color="default" variant="outlined" />;
+                        return <Chip label={params.value} color="default" />;
                 }
+            },
+        },
+        {
+            field: 'consenus',
+            headerName: 'Consenus',
+            sortable: false,
+            flex: 1,
+            renderHeader: (params) => (
+                // <strong style={{display: 'flex', alignItems: 'center'}}>
+                //   {'Consenus '}
+                  <img src={docuSignLogo} height="20" />
+                // </strong>
+              ),
+            renderCell: (params) => {
+                const fileNames = params.value;
+                return fileNames.map((fileName, index) => (
+                    <Chip 
+                        key={`${index}-${fileName}`} 
+                        label={fileName} 
+                        color="primary" 
+                        size="small" 
+                        variant="outlined" 
+                        sx={{ ml: index ? 0.5 : 0 }}
+                        onClick={() => {}}
+                    />
+                ));
+            },
+        },
+        {
+            field: 'appointment',
+            headerName: 'Appointment',
+            sortable: false,
+            flex: 1,
+            renderHeader: (params) => (
+                // <strong style={{display: 'flex', alignItems: 'center'}}>
+                //   {'Consenus '}
+                  <img src={zoomLogo} height="12" />
+                // </strong>
+              ),
+            renderCell: (params) => {
+                const { time, url } = params.value;
+                return <Link href={url || '#'} color="inherit" underline="always">
+                  {time}
+                </Link>
             },
         },
         {
             field: 'actions',
             type: 'actions',
             headerName: 'Actions',
-            flex: 1,
+            width: 80,
             cellClassName: 'actions',
             getActions: ({ id }) => {
                 return [
