@@ -113,12 +113,14 @@ const PopularCard = ({ isLoading }) => {
                                       width: 16,
                                       height: 16,
                                       borderRadius: '5px',
-                                      backgroundColor: theme.palette.success.light,
-                                      color: theme.palette.success.dark,
+                                      backgroundColor: theme.palette[variance > 0 ? 'success' : 'error'].light,
+                                      color: theme.palette[variance > 0 ? 'success' : 'error'].dark,
                                       ml: 2
                                     }}
                                   >
-                                    <KeyboardArrowUpOutlinedIcon fontSize="small" color="inherit" />
+                                    {variance > 0 ? 
+                                      <KeyboardArrowUpOutlinedIcon fontSize="small" color="inherit" /> : 
+                                      <KeyboardArrowDownOutlinedIcon fontSize="small" color="inherit" />}
                                   </Avatar>
                                 </Grid>
                               </Grid>
