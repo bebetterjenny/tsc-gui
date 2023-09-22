@@ -47,9 +47,15 @@ const Post1 = () => {
         />
         <CardContent>
           <Typography variant='body2' color='text.secondary'>
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            We work in the hardest-to-reach places, where it’s toughest to be a
+            child.When you give to Save the Children, 85% of every dollar goes
+            straight to our mission to provide lifesaving relief to children.
+            $50 can provide enough food to keep 3 children from going hungry for
+            a month $150 can wrap 30 warm, cozy blankets around children
+            affected by conflict $300 can provide 150 face masks to refugee
+            health workers on the front lines With your support, we can continue
+            our work to keep children in the U.S. and around the world healthy,
+            educated and safe.
           </Typography>
         </CardContent>
         <CardActions>

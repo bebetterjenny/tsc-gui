@@ -42,14 +42,22 @@ const Post3 = () => {
         <CardMedia
           component='img'
           height='194'
-          image='https://media.istockphoto.com/id/178447404/photo/modern-business-buildings.jpg?s=1024x1024&w=is&k=20&c=w15AGFL7iZtN6aXbIlrUWZbkft2HtZq9TnKrmp5Jr2g='
+          image='https://wordpress.bigissue.com/wp-content/uploads/2017/12/Homelessness-Manchester-Smabs-Sputzer-hero1.jpg'
           alt='Paella dish'
         />
         <CardContent>
           <Typography variant='body2' color='text.secondary'>
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            Since their founding, the Coalition for the Homeless has supported
+            people suffering in extreme poverty, including homeless people. For
+            example, in 2022, their Grand Central Food Program provided 354,000
+            meals to homeless people at 25 locations in New York. Their eviction
+            prevention program also saved 613 families from becoming homeless by
+            providing one-time rental arrears grants. Furthermore, they housed
+            222 homeless children at Camp Homeward Bound in the summer. They
+            also provided stable, permanent housing to 169 residents. In
+            addition, they helped 62 chronically homeless individuals with
+            physical or mental disabilities to secure government benefits and
+            obtain supportive housing.
           </Typography>
         </CardContent>
         <CardActions>
