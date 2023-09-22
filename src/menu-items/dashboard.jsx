@@ -21,7 +21,7 @@ const dashboard = {
       id: 'dashboard-tasks',
       title: 'Cases',
       type: 'item',
-      url: '/dashboard/Cases',
+      url: '/dashboard/cases',
       icon: IconChecklist,
       breadcrumbs: false
     },

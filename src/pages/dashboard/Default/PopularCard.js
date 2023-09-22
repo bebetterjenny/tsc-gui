@@ -17,6 +17,7 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import { mockOrganizations } from './chart-data/mock-organzations';
+import { Fragment } from 'react';
 
 // ==============================|| DASHBOARD DEFAULT - POPULAR CARD ||============================== //
 
@@ -89,7 +90,7 @@ const PopularCard = ({ isLoading }) => {
                   const change = variance > 0 ? `growth` : 'reduction';
                   const abs = Math.abs(variance);
                   return (
-                    <>
+                    <Fragment key={item.id}>
                       {!!index && <Divider sx={{ my: 1.5 }} />}
                       <Grid container direction="column">
                         <Grid item>
@@ -133,7 +134,7 @@ const PopularCard = ({ isLoading }) => {
                           </Typography>
                         </Grid>
                       </Grid>
-                    </>
+                    </Fragment>
                   );
                 })}
                 {/* <Grid container direction="column">

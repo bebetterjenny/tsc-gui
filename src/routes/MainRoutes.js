@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import { useParams } from 'react-router-dom';
 
 // project imports
 import MainLayout from 'layout/MainLayout';
@@ -6,6 +7,12 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/Default')));
+const DashboardCases = Loadable(lazy(() => import('pages/dashboard/Cases')));
+const DashboardCasesEdit = Loadable(lazy(() => import('pages/dashboard/Cases/Edit')));
+const DashboardRecipients = Loadable(lazy(() => import('pages/dashboard/Recipients')));
+const DashboardRecipientsEdit = Loadable(lazy(() => import('pages/dashboard/Recipients/Edit')));
+const DashboardOrganizations = Loadable(lazy(() => import('pages/dashboard/Organizations')));
+const DashboardOrganizationsEdit = Loadable(lazy(() => import('pages/dashboard/Organizations/Edit')));
 
 // import routing
 const Imoport = Loadable(lazy(() => import('pages/import')));
@@ -39,15 +46,42 @@ const MainRoutes = {
         },
         {
           path: 'cases',
-          element: <DashboardDefault />
+          children: [
+            {
+              path: '',
+              element: <DashboardCases />
+            },
+            {
+              path: 'edit/:id',
+              element: <DashboardCasesEdit />
+            }
+          ]
         },
         {
           path: 'recipients',
-          element: <DashboardDefault />
+          children: [
+            {
+              path: '',
+              element: <DashboardRecipients />
+            },
+            {
+              path: 'edit/:id',
+              element: <DashboardRecipientsEdit />
+            }
+          ]
         },
         {
           path: 'organizations',
-          element: <DashboardDefault />
+          children: [
+            {
+              path: '',
+              element: <DashboardRecipients />
+            },
+            {
+              path: 'edit/:id',
+              element: <DashboardOrganizationsEdit />
+            }
+          ]
         }
       ]
     },
