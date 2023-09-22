@@ -11,7 +11,7 @@ const imports = {
   children: [
     {
       id: 'batch-recipients',
-      title: 'recipients',
+      title: 'Recipients',
       type: 'item',
       url: '/batch/recipients',
       icon: IconOld,

@@ -19,6 +19,11 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import Upload from 'pages/batch/steps/Upload';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import user1 from 'assets/images/users/user1.jpeg';
+import user2 from 'assets/images/users/user2.jpeg';
+import user3 from 'assets/images/users/user3.jpeg';
+import Avatar from '@mui/material/Avatar';
 
 
 // styles
@@ -55,7 +60,7 @@ const StyledRoot = styled(MainCard)(({ theme }) => ({
                 fontWeight: 400,
             },
         }
-    }
+    },
 }));
 
 const Edit = () => {
@@ -65,17 +70,17 @@ const Edit = () => {
         <StyledRoot title="Create a New Case">
             <Formik
                 initialValues={{ taskId: '12313', tscAdministratorId: '21303', navigatorId: '314', taskProgressEnum: "START" }}
-                validate={values => {
-                    const errors = {};
-                    // if (!values.taskId) {
-                    //     errors.taskId = 'Required';
-                    // } else if (
-                    //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.taskId)
-                    // ) {
-                    //     errors.taskId = 'Invalid email address';
-                    // }
-                    return errors;
-                }}
+                // validate={values => {
+                //     const errors = {};
+                //     // if (!values.taskId) {
+                //     //     errors.taskId = 'Required';
+                //     // } else if (
+                //     //     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.taskId)
+                //     // ) {
+                //     //     errors.taskId = 'Invalid email address';
+                //     // }
+                //     return errors;
+                // }}
                 onSubmit={(values, { setSubmitting }) => {
                     setTimeout(() => {
                         alert(JSON.stringify(values, null, 2));
@@ -132,7 +137,7 @@ const Edit = () => {
                                     onBlur={handleBlur}
                                 />
                             </Grid>
-                            <Grid item xs={4}>
+                            <Grid item xs={5}>
                                 <FormControl fullWidth>
                                     <InputLabel >Status</InputLabel>
                                     <Select
@@ -151,23 +156,69 @@ const Edit = () => {
                                     <FormHelperText></FormHelperText>
                                 </FormControl>
                             </Grid>
-                            <Grid xs={4}>
-                                <LocalizationProvider fullWidth dateAdapter={AdapterDateFns}>
+                            <Grid item xs={7}>
+                                <FormControl fullWidth>
+                                    <InputLabel >Recipient</InputLabel>
+                                    <Select
+                                        label="Recipient"
+                                        className="select-recipient"
+                                        value={values.recipientId}
+                                        renderValue={(value) => {return value}}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                    >
+                                        <MenuItem value={'4301'}>
+                                            <Avatar
+                                                src={user1}
+                                                sx={{ width: 30, height: 30 }}
+                                            />
+                                            <div style={{marginLeft: 10}}>
+                                                <div><Typography variant="subtitle1">Peter Chang</Typography></div>
+                                                <div><Typography variant="subtitle2">ID: 4301</Typography></div>
+                                            </div>
+                                        </MenuItem>
+                                        <MenuItem value={'4302'}>
+                                            <Avatar
+                                                src={user1}
+                                                sx={{ width: 30, height: 30 }}
+                                            />
+                                            <div style={{marginLeft: 10}}>
+                                                <div><Typography variant="subtitle1">Cormac Kinney</Typography></div>
+                                                <div><Typography variant="subtitle2">ID: 4302</Typography></div>
+                                            </div>
+                                        </MenuItem>
+                                        <MenuItem value={'4303'}>
+                                            <Avatar
+                                                src={user1}
+                                                sx={{ width: 30, height: 30 }}
+                                            />
+                                            <div style={{marginLeft: 10}}>
+                                                <div><Typography variant="subtitle1">Jenny Han</Typography></div>
+                                                <div><Typography variant="subtitle2">ID: 4303</Typography></div>
+                                            </div>
+                                        </MenuItem>
+                                    </Select>
+                                    <FormHelperText></FormHelperText>
+                                </FormControl>
+                            </Grid>
+                            <Grid xs={6}>
+                                <LocalizationProvider dateAdapter={AdapterDateFns}>
                                     <DatePicker
-                                        fullWidth
                                         label="Appointment Date"
                                         value={values.date}
+                                        sx={{ width: '100%' }}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                     />
                                 </LocalizationProvider>
                             </Grid>
-                            <Grid xs={4}>
+                            <Grid xs={6}>
                                 <LocalizationProvider fullWidth dateAdapter={AdapterDateFns}>
                                     <TimePicker
                                         fullWidth
                                         label="Appointment Time"
                                         value={values.time}
+                                        sx={{ width: '100%' }}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                     />

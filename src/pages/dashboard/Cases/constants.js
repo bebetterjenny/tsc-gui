@@ -9,6 +9,7 @@ import {
 export const mockCases = [
     {
         taskId: "12301",
+        recipientId: "4301",
         tscAdministratorId: "21302",
         navigatorId: "314",
         taskProgressEnum: "START", //START, IN_PROGRESS, COMPLETED
@@ -20,6 +21,7 @@ export const mockCases = [
     },
     {
         taskId: "12302",
+        recipientId: "4302",
         tscAdministratorId: "21304",
         navigatorId: "313",
         taskProgressEnum: "START",
@@ -31,6 +33,7 @@ export const mockCases = [
     },
     {
         taskId: "12303",
+        recipientId: "4303",
         tscAdministratorId: "21302",
         navigatorId: "315",
         taskProgressEnum: "IN_PROGRESS",
@@ -42,6 +45,7 @@ export const mockCases = [
     },
     {
         taskId: "12304",
+        recipientId: "4301",
         tscAdministratorId: "21303",
         navigatorId: "312",
         taskProgressEnum: "COMPLETED",
@@ -53,6 +57,7 @@ export const mockCases = [
     },
     {
         taskId: "12305",
+        recipientId: "4302",
         tscAdministratorId: "21305",
         navigatorId: "311",
         taskProgressEnum: "COMPLETED",
@@ -64,6 +69,7 @@ export const mockCases = [
     },
     {
         taskId: "12306",
+        recipientId: "4303",
         tscAdministratorId: "21301",
         navigatorId: "311",
         taskProgressEnum: "IN_PROGRESS",
@@ -75,6 +81,7 @@ export const mockCases = [
     },
     {
         taskId: "12307",
+        recipientId: "4301",
         tscAdministratorId: "21302",
         navigatorId: "314",
         taskProgressEnum: "START",
@@ -86,6 +93,7 @@ export const mockCases = [
     },
     {
         taskId: "12308",
+        recipientId: "4302",
         tscAdministratorId: "21304",
         navigatorId: "313",
         taskProgressEnum: "START",
@@ -97,6 +105,7 @@ export const mockCases = [
     },
     {
         taskId: "12309",
+        recipientId: "4303",
         tscAdministratorId: "21302",
         navigatorId: "315",
         taskProgressEnum: "IN_PROGRESS",
@@ -108,6 +117,7 @@ export const mockCases = [
     },
     {
         taskId: "12310",
+        recipientId: "4301",
         tscAdministratorId: "21303",
         navigatorId: "312",
         taskProgressEnum: "COMPLETED",
@@ -119,6 +129,7 @@ export const mockCases = [
     },
     {
         taskId: "12311",
+        recipientId: "4302",
         tscAdministratorId: "21305",
         navigatorId: "311",
         taskProgressEnum: "COMPLETED",
@@ -130,6 +141,7 @@ export const mockCases = [
     },
     {
         taskId: "12312",
+        recipientId: "4303",
         tscAdministratorId: "21301",
         navigatorId: "311",
         taskProgressEnum: "IN_PROGRESS",
