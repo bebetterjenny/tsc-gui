@@ -129,7 +129,7 @@ const PopularCard = ({ isLoading }) => {
                           </Grid>
                         </Grid>
                         <Grid item>
-                          <Typography variant="subtitle2" sx={{ color: 'success.dark' }}>
+                          <Typography variant="subtitle2" sx={{ color: variance < 0 ? 'error.dark' : 'success.dark' }}>
                             {abs}% {change}
                           </Typography>
                         </Grid>
