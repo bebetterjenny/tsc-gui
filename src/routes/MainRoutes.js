@@ -28,7 +28,7 @@ const DashboardOrganizationsEdit = Loadable(
 );
 
 // import routing
-const Imoport = Loadable(lazy(() => import('pages/import')));
+const Batch = Loadable(lazy(() => import('pages/batch')));
 
 // utilities routing
 const UtilsTypography = Loadable(
@@ -121,15 +121,15 @@ const MainRoutes = {
       ],
     },
     {
-      path: 'import',
+      path: 'batch',
       children: [
         {
           path: 'recipients',
-          element: <Imoport />,
+          element: <Batch />,
         },
         {
           path: 'organizations',
-          element: <Imoport />,
+          element: <Batch />,
         },
       ],
     },

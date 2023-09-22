@@ -16,7 +16,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
-import Upload from 'pages/import/steps/Upload';
+import Upload from 'pages/batch/steps/Upload';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
