@@ -36,13 +36,13 @@ const Post1 = () => {
               <MoreVert />
             </IconButton>
           }
-          title='Chorizo Photea'
+          title='ABC'
           subheader='September 14, 2023'
         />
         <CardMedia
           component='img'
           height='194'
-          image='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80'
+          image='https://media.istockphoto.com/id/178447404/photo/modern-business-buildings.jpg?s=1024x1024&w=is&k=20&c=w15AGFL7iZtN6aXbIlrUWZbkft2HtZq9TnKrmp5Jr2g='
           alt='Paella dish'
         />
         <CardContent>
